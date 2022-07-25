@@ -985,7 +985,7 @@ void send_consumer(uint16_t data) {
 #endif
 }
 
-void send_programmable_button(uint32_t data) {
+void send_programmable_button(uint16_t data) {
 #ifdef PROGRAMMABLE_BUTTON_ENABLE
     osalSysLock();
     if (usbGetDriverStateI(&USB_DRIVER) != USB_ACTIVE) {
